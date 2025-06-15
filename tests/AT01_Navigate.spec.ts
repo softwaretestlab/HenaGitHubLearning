@@ -15,3 +15,12 @@ test('has titles', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
   //new line added to test git commit
 });
+
+//jira-1234xy automation test
+test('has titles', async ({ page }) => {
+  await page.goto('https://playwright.dev/');
+
+  // Expect a title "to contain" a substring.
+  await expect(page).toHaveTitle(/Playwright/);
+  //new line added to test git commit
+});
